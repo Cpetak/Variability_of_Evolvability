@@ -1,10 +1,11 @@
+#IMPORT PACKAGES
+
 import numpy as np
 from numpy.lib.stride_tricks import sliding_window_view
 from matplotlib.lines import Line2D
 from numba import njit, prange
 from pathlib import Path
 import seaborn as sns
-#import torch
 import hashlib
 from matplotlib.patches import Polygon
 import matplotlib.pyplot as plt
@@ -14,11 +15,10 @@ import os
 import math
 import colorsys
 from collections import defaultdict
-#import networkx as nx
 from matplotlib.patches import Circle
-from scipy.stats import ttest_ind
 from scipy.stats import mannwhitneyu
 
+#Parameter for sigmoid function
 ALPHA = 10
 
 def prepare_run(folder_name):

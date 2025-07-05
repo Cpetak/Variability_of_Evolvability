@@ -254,16 +254,9 @@ if __name__ == "__main__":
 
   args = parser.parse_args()
 
-  #69904,149796
-  #1024
-  #to_seed = lambda n, N : np.array(list(map(int, format(n, f"0{N}b"))))
-
   #Writing to file
   folder_name = Path("~/scratch/detailed_save/static").expanduser()
-  #folder = helper.prepare_run(folder_name)
   args.folder = folder_name
-
-  #args.num_cells = args.dev_steps
 
   #Make sure that user provided a rule and a seed for each alternative environment
   assert len(args.rules) == len(args.seed_ints), f"Num rules {len(args.rules)} != num seeds {len(args.seed_ints)}"

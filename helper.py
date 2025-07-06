@@ -17,6 +17,7 @@ ALPHA = 10
 def map_to_range(value):
   return int(hashlib.sha256(str(value).encode()).hexdigest(), 16) % (2**32)
 
+#Calculating different features of phenotypic variability
 def calc_pheno_variation(p, children_locs, num_child, parent_locs, dev_steps, num_cells, where_overlap, where_no_overlap):
     
     child_phenotypes = p[children_locs] 

@@ -1,3 +1,5 @@
+#CLEANED
+
 import os
 import argparse
 import numpy as np
@@ -11,6 +13,8 @@ from tqdm import tqdm
 import pandas as pd
 
 import helper
+
+#Explore mutational neighborhood of GRN.
 
 @dataclass
 class GRNFileInfo:
@@ -109,12 +113,8 @@ if __name__ == "__main__":
     N = 1 #number of noise levels to test
     nrows = 50 #x**2 is number of clones
 
-    #out_filename1 = os.path.expanduser(f"{root}/noise_results/testing/stats_{args.rule}_{args.exp_type}2_{args.candidate_idx}_env1_unsorted_noise_data.jsonl")
-    #out_filename2 = os.path.expanduser(f"{root}/noise_results/testing/stats_{args.rule}_{args.exp_type}2_{args.candidate_idx}_env2_unsorted_noise_data.jsonl")
-
     out_filename1 = os.path.expanduser(f"~/scratch/testing_noisy/stats_{args.rule}_{args.exp_type}2_{args.candidate_idx}_env1_unsorted_noise_data.jsonl")
     out_filename2 = os.path.expanduser(f"~/scratch/testing_noisy/stats_{args.rule}_{args.exp_type}2_{args.candidate_idx}_env2_unsorted_noise_data.jsonl")
-
 
     df_outfilename = os.path.expanduser(f"~/scratch/testing_noisy/stats_{args.rule}_{args.exp_type}2_{args.candidate_idx}_pheno_data.csv")
 
@@ -124,7 +124,6 @@ if __name__ == "__main__":
     df = pd.DataFrame(columns=["Pheno_dists1", "Pheno_stds1", "Pheno_dists2", "Pheno_stds2"])
 
     for filename in tqdm(files, position=0):
-        print(filename)
         if "149796" in filename.name:
             print(filename)
             params = GRNFilenameParser.parse(filename)

@@ -1,5 +1,3 @@
-#CLEANED
-
 #IMPORT PACKAGES
 
 import numpy as np

@@ -1,5 +1,3 @@
-#CLEANED
-
 import numpy as np
 import argparse
 from tqdm import trange

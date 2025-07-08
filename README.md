@@ -14,6 +14,7 @@ Files:
 * Analyses regarding evolvability - evolvability_measure.ipynb, pheno_variability_shape.ipynb, percent_offspring_better.ipynb
 
 Dependencies and versions:
+
 Full list available in the ca_grn_environment.yml file.
 
 * python=3.11.7

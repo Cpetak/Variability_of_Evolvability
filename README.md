@@ -13,5 +13,11 @@ Files:
 * Analyses regarding genotype space exploration - genotype_space_exploration.ipynb
 * Analyses regarding evolvability - evolvability_measure.ipynb, pheno_variability_shape.ipynb, percent_offspring_better.ipynb
 
+Dependencies and versions:
+Full list available in the ca_grn_environment.yml file.
 
-     
+* python=3.11.7
+* ipython=8.20.0 
+* matplotlib=3.8.0
+* numpy=1.26.4
+* scipy=1.12.0
